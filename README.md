@@ -40,36 +40,3 @@ AI-Powered GitHub Navigator is a web application designed to help students and d
    ```
 6. Access the app at `http://localhost:3000`
 
-## 📜 License
-This project is licensed under the MIT License.
-
-## 🤝 Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests.
-
-## 📞 Contact
-For any queries or collaboration, reach out at [your email] or open an issue in the repository.
-
-## 💻 Code Example
-Here’s a simple example of fetching repositories using the GitHub API in Python:
-
-```python
-import requests
-
-def fetch_repositories(topic):
-    url = f"https://api.github.com/search/repositories?q={topic}"
-    headers = {"Accept": "application/vnd.github.v3+json"}
-    response = requests.get(url, headers=headers)
-    if response.status_code == 200:
-        return response.json()["items"]
-    else:
-        return []
-
-# Example usage
-topic = "machine learning"
-repos = fetch_repositories(topic)
-for repo in repos[:5]:
-    print(f"{repo['name']} - {repo['html_url']}")
-```
-
-This function fetches repositories based on a topic and prints the top results. More advanced functionality will be integrated into the AI-powered navigator!
-
