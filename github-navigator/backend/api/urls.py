@@ -8,5 +8,5 @@ def api_home(request):
 
 urlpatterns = [
     path('', api_home),  # This handles /api/
-    path('repos/', get_repositories),  # This handles /api/repos/
+    path('repos/', get_repositories, name='repositories'),  # This handles /api/repos/
 ]

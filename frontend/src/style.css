@@ -1,0 +1,52 @@
+/* Background */
+body {
+    background: linear-gradient(to bottom right, #4a90e2, #9013fe);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Card Styling */
+  .repo-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .repo-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Buttons */
+  .repo-button {
+    background: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  .repo-button:hover {
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Avatar */
+  .repo-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  /* Grid Layout */
+  .repo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
