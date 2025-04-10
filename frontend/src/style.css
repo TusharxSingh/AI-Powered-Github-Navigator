@@ -2,7 +2,8 @@
 body {
     background: linear-gradient(to bottom right, #4a90e2, #9013fe);
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Valty';
+    src: url('C:\Users\tusha\Downloads\valty-demo') format('opentype');
   }
   
   /* Card Styling */

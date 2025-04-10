@@ -1,6 +1,18 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+@font-face {
+  font-family: 'Merich';
+  src: url('/fonts/merich.otf') format('opentype');
+}
+
+.merich-heading {
+  font-family: 'Merich';
+  font-weight: bolder;
+}
+.custom-heading {
+  color: #2f4156;
+}
+
+
 img {
   max-width: 100px; /* Adjust size as needed */
   height: auto;
